@@ -1,0 +1,124 @@
+html {
+    width: 100%;
+    margin: 0;
+    color: #555;
+    background: #fff;
+}
+body {
+    width: 400px;
+    min-height: 650px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+    background-color: antiquewhite;
+    padding: 30px;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* day */
+.now {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.now div {
+    width: 45%;
+}
+.now div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.now .date {
+    font-size: 40px;
+    width: 10%;
+    text-align: center;
+}
+.now .day {
+    font-size: 18px;
+}
+.now .day {
+    text-align: right;
+}
+
+/* List */
+ul.list-wrap {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+ul.list-wrap li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    width: 80%;
+    border-bottom: 2px solid rgb(95, 55, 241, 0.5);
+    padding: 10px 10px;
+    margin: 20px 10px;
+    box-sizing: border-box;
+}
+ul.list-wrap li.done {
+    text-decoration: line-through;
+}
+ul.list-wrap span {
+    line-height: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    width: 20%;
+    /* border: 1px solid blue; */
+    text-align: center;
+    /* color: rgb(95, 55, 241); */
+    font-weight: bold;
+    font-size: 20px;
+}
+span i {
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    color: rgb(95, 55, 241, 0.8);
+}
+
+/* add list */
+.input-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.input {
+    width: 78%;
+    height: 30px;
+    line-height: 30px;
+    border: 3px solid rgb(95, 55, 241, 0.5);
+    border-radius: 30px;
+    background: none;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.add-btn {
+    width: 18%;
+
+    /* border: 1px solid rgb(95, 55, 241, 0.8); */
+    border: none;
+    background: none;
+    box-sizing: border-box;
+}
+.add-btn i {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    color: rgb(95, 55, 241, 0.8);
+}
+/* after가 DOM 요소가 아니라서 사용이 불편 */
+/* ul.list-wrap li::after {
+    content: "X";
+    float: right;
+    color: red;
+    font-weight: bold;
+} */
